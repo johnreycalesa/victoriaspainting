@@ -1,0 +1,286 @@
+    div.card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    @media only screen and (max-width: 414px) {
+        .inner-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first-div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #second-div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            height: 100%;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        .container>* {
+            width: 100%;
+        }
+
+
+        .inner-div-services {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    @media only screen and (min-width: 415px) and (max-width: 768px) {
+
+        .inner-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first-div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #second-div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            height: 100%;
+            text-align: center;
+            padding: 1rem;
+            width: 97.5%;
+        }
+
+        .container>* {
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: auto;
+        }
+
+        .inner-div-services {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-div{
+            margin: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1079px) {
+        .inner-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first-div {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        #second-div {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            height: 100%;
+            text-align: center;
+            padding: 1rem;
+            width: 97.5%;
+        }
+
+        .container>* {
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: auto;
+        }
+
+        .inner-div-services {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:auto;
+            padding: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: #F0F0F0;
+        }
+    }
+
+    @media only screen and (min-width: 1080px) and (max-width: 1439px) {
+        .inner-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first-div {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        #second-div {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            height: 100%;
+            text-align: center;
+            padding: 1rem;
+            width: 97.5%;
+        }
+
+        .container>* {
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: auto;
+        }
+
+        .inner-div-services {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:auto;
+            padding: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: #F0F0F0;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .inner-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first-div {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        #second-div {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            height: 100%;
+            text-align: center;
+            padding: 1rem;
+            width: 1440px;
+        }
+
+        .container>* {
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: auto;
+        }
+
+        .card.desc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner-div-services {
+            display: flex;
+            justify-content: center;
+        }
+        .card-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:auto;
+            padding: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: #F0F0F0;
+        }
+    }
