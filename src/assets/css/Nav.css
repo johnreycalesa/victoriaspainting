@@ -1,0 +1,213 @@
+.logo img {
+    height: 43px;
+    margin: 10px 10px 0 10px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+li.phone-number{
+    padding:  0 10px;
+    border-left: 1px solid black;
+}
+
+button.dropbtn{
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav a {
+    width: 100px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 590px) {
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        background-color: white;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+        background-color: white;
+        color: black;
+    }
+
+    li.phone-number{
+        border-left: none
+    }
+
+    .dropdown {
+        float: right;
+        width: 30px;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    .navbar-menu {
+        display: block;
+        background-color: white;
+        margin: 0;
+        transition: all .5s;
+        width: 100%;
+    }
+
+    .navbar-menu-hide {
+        display: none;
+        transition: all .5s;
+    }
+
+}
+
+@media only screen and (min-width: 591px) and (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        background-color: white;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+        background-color: white;
+        color: black;
+    }
+
+    li.phone-number{
+        border-left: none
+    }
+
+    .dropdown {
+        float: right;
+        width: 30px;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    .navbar-menu {
+        display: block;
+        background-color: white;
+        margin: 0;
+        transition: all .5s;
+        width: 100%;
+    }
+
+    .navbar-menu-hide {
+        display: none;
+        transition: all .5s;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1079px) {
+    .logo {
+        display: inline;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        color: #003057;
+
+    }
+
+    ul.navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    button.dropbtn img {
+        width: 20px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1439px) {
+    .logo {
+        display: inline;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        color: #003057;
+
+    }
+
+    ul.navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    button.dropbtn img {
+        width: 20px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        display: inline;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        color: #003057;
+    }
+
+    ul.navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    button.dropbtn {
+        width: 100%;
+        height: 100%;
+        margin-right: 25px;
+    }
+
+    button.dropbtn img {
+        width: 20px;
+        height: auto;
+    }
+}
