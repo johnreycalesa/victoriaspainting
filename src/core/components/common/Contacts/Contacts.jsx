@@ -45,7 +45,7 @@ export function Contacts() {
                         <div className="rows-row">
                             <input type="tel" pattern="\d{3}-\d{3}-\d{4}" id="phone" name="from_phone" placeholder="Phone Number" maxlength="12" required />
                             <br />
-                            <select id="select" placeholder="Select" name="select">
+                            <select id="select" placeholder="Select" name="select" aria-label="Selection of Services">
                                 <option value disabled selected hidden required>
                                     Services Needed
                                 </option>

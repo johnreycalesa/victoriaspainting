@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../../../assets/css/fonts.css';
@@ -56,7 +55,7 @@ export function AboutHeader() {
                 <form action="#" method="post" id="right-section" ref={form} onSubmit={sendEmail}>
                     <div id="name_phone">
                         <input className="fields" type="text" id="about-name" name="from_name" placeholder="Name" required /><br />
-                        <input className="fields" type="number" pattern="[0-9]{11}" id="phones" placeholder="Phone"
+                        <input className="fields" type="number" pattern="[0-9]{11}" id="phones"
                             name="from_phone" placeholder="Phone Number" required /><br />
                     </div>
                     <input className="fields email-subject" type="email" id="about-email" name="from_email" placeholder="Email Address" required /><br />

@@ -5,7 +5,7 @@ import icon1 from "../../../assets/img/icons/icon1_landing.png";
 import icon2 from "../../../assets/img/icons/icon2_landing.png";
 import icon3 from "../../../assets/img/icons/icon3_landing.png";
 import icon4 from "../../../assets/img/icons/icon4_landing.png";
-import history from "../../../assets/img/services_history.png";
+import history from "../../../assets/img/services_history.webp";
 
 export function LandingHeader() {
     return (
@@ -24,10 +24,10 @@ export function LandingHeader() {
                         towards transforming your home.
                     </p>
                     <div className="text-overlay">
-                        <img src={icon1} />
-                        <img src={icon2} />
-                        <img src={icon3} />
-                        <img src={icon4} />
+                        <img src={icon1} alt="Cabinet icon"/>
+                        <img src={icon2} alt="Door icon"/>
+                        <img src={icon3} alt="Faucet icon"/>
+                        <img src={icon4} alt="Paintroll icon"/>
                     </div>
                     <a href="tel:+19732344198" className="text-overlay">
                         CALL US <br /> +1-973-234-4198
@@ -42,7 +42,7 @@ export function LandingHeader() {
             </div>
             <div id="header_content">
                 <div id="header_left">
-                    <img className="history_image" src={history} />
+                    <img className="history_image" src={history} alt="Company history and statistics"/>
                 </div>
                 <div id="header_right">
                     <p>

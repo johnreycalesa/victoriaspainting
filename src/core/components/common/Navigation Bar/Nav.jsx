@@ -26,7 +26,7 @@ const App = () => {
         <img
           src={more}
           className="dropdown"
-          onClick={handleClick}
+          onClick={handleClick} alt="Dropdown icon"
         />
         <div className="logo">
           <Link to="/" >

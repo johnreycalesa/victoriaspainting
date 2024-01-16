@@ -1,8 +1,8 @@
 import React from "react";
 import '../../../assets/css/About_Areas.css';
 import '../../../assets/css/fonts.css';
-import aboutimg from "../../../assets/img/about_areas.png";
-import listimg from "../../../assets/img/list-area.png";
+import aboutimg from "../../../assets/img/about_areas.webp";
+import listimg from "../../../assets/img/list-area.webp";
 
 export function AboutAreas() {
     return (

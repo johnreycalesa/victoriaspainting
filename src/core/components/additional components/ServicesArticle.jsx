@@ -1,8 +1,8 @@
 import React from "react";
 import '../../../assets/css/Services_Article.css';
 import '../../../assets/css/fonts.css';
-import servicesimg1 from "../../../assets/img/servicespage.png";
-import servicesimg2 from "../../../assets/img/servicespage (2).png";
+import servicesimg1 from "../../../assets/img/servicespage.webp";
+import servicesimg2 from "../../../assets/img/servicespage (2).webp";
 
 export function ServicesArticle() {
     return (

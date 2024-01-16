@@ -2,12 +2,12 @@ import React from "react";
 import '../../../assets/css/Contact_Services.css';
 import '../../../assets/css/fonts.css';
 import { useEffect } from 'react';
-import contactimg1 from "../../../assets/img/contactpage_img.png";
-import contactimg2 from "../../../assets/img/contactpage_img (2).png";
-import contactimg3 from "../../../assets/img/contactpage_img (3).png";
-import contactimg4 from "../../../assets/img/contactpage_img (4).png";
-import contactimg5 from "../../../assets/img/contactpage_img (5).png";
-import contactimg6 from "../../../assets/img/contactpage_img (6).png";
+import contactimg1 from "../../../assets/img/contactpage_img.webp";
+import contactimg2 from "../../../assets/img/contactpage_img (2).webp";
+import contactimg3 from "../../../assets/img/contactpage_img (3).webp";
+import contactimg4 from "../../../assets/img/contactpage_img (4).webp";
+import contactimg5 from "../../../assets/img/contactpage_img (5).webp";
+import contactimg6 from "../../../assets/img/contactpage_img (6).webp";
 
 export function ContactServices() {
     useEffect(() => {

@@ -25,10 +25,10 @@ export function Footer() {
             inviting environment.
           </p>
           <div id="links">
-            <a href="#"><img src={facebook} className="socials" /></a>
-            <a href="#"><img src={gmail} className="socials" /></a>
+            <a href="#"><img src={facebook} className="socials" alt="Facbook logo"/></a>
+            <a href="#"><img src={gmail} className="socials" alt="GMail logo"/></a>
             <a href="https://www.instagram.com/victoriaspaintingllc/" target="_blank">
-              <img src={instagram} className="socials" />
+              <img src={instagram} className="socials" alt="Instagram logo"/>
             </a>
           </div>
         </div>
@@ -46,21 +46,21 @@ export function Footer() {
         <div id="right-column">
           <h1>CONTACT</h1>
           <div className="text-design">
-            <img src={phone} alt="Phone Number" className="logo" />
+            <img src={phone} alt="Phone icon" className="logo" />
             <a href="tel:+19732344198" className="contact-footer">
               +1 973-234-4198
             </a>
             <br />
           </div>
           <div className="text-design">
-            <img src={email} className="logo" />
+            <img src={email} className="logo" alt="Email icon"/>
             <a href="mailto: business@victoriaspainting.com" className="contact-footer">
               business@victoriaspainting.com
             </a>
             <br />
           </div>
           <div className="text-design">
-            <img src={address} className="contact-footer logo" /> Dover, New Jersey
+            <img src={address} className="contact-footer logo" alt="Location icon"/> Dover, New Jersey
           </div>
         </div>
       </footer>

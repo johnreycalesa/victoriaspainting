@@ -1,8 +1,8 @@
 import React from "react";
 import "../../../assets/css/Landing_Slider.css";
 import "../../../assets/css/fonts.css";
-import img1 from "../../../assets/img/slide_1.png";
-import img2 from "../../../assets/img/slide_2.png";
+import img1 from "../../../assets/img/slide_1.webp";
+import img2 from "../../../assets/img/slide_2.webp";
 
 export function LandingSlider() {
   let slideIndex = 1;
