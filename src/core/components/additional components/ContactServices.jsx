@@ -17,7 +17,7 @@ export function ContactServices() {
         <article className="center-text">
             <div className="services">
                 <div className="about-article_cards">
-                    <img className="contact_article_images" src={contactimg1} />
+                    <img className="contact_article_images" src={contactimg1} loading="lazy" />
                     <div className="services-description">
                         <h2> Dry Wall Painting &amp; Repair</h2>
                         <p> Contact us today to schedule a consultation and take the first step towards transforming your home.</p>

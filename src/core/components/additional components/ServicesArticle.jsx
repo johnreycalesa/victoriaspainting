@@ -13,7 +13,7 @@ export function ServicesArticle() {
             </header>
             <div className="inner-div-services" id="first-div">
                 <div className="card">
-                    <img src={servicesimg2} />
+                    <img src={servicesimg2} loading="lazy"/>
                     </div>
                 <div className="card desc">
                     <div className="card-div" id="first-card">
@@ -24,7 +24,7 @@ export function ServicesArticle() {
             </div>
             <div className="inner-div-services" id="second-div">
             <div className="card">
-                <img src={servicesimg1} /></div>
+                <img src={servicesimg1} loading="lazy"/></div>
                 <div className="card desc">
                     <div className="card-div" id="second-card">
                         <h1>Flexible Schedule</h1>
