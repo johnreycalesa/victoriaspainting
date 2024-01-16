@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../../../assets/css/fonts.css';
 import '../../../assets/css/About_Header.css';
 import icon1 from "../../../assets/img/icons/phone_contacts.png";
@@ -10,50 +12,18 @@ import icon4 from "../../../assets/img/icons/shops_contacts.png";
 
 
 export function AboutHeader() {
-    const fieldFocus = event => {
-        document.getElementById("navbar-id").classList.toggle('navbar-menu-hide');
-    };
-    const [mailerState, setMailerState] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-    // =================================================================
-    function handleStateChange(e) {
-        setMailerState((prevState) => ({
-            ...prevState,
-            [e.target.name]: e.target.value,
-        }));
-    }
-    // =================================================================
-    const submitEmail = async (e) => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        console.log({ mailerState });
-        const response = await fetch("http://localhost:3001/send", {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json",
-            },
-            body: JSON.stringify({ mailerState }),
-        })
-            .then((res) => res.json())
-            .then(async (res) => {
-                const resData = await res;
-                console.log(resData);
-                if (resData.status === "success") {
-                    alert("Message Sent");
-                    e.target.reset();
-                } else if (resData.status === "fail") {
-                    alert("Message failed to send");
-                    e.target.reset();
-                }
-            })
-            .then(() => {
-                setMailerState({
-                    email: "",
-                    name: "",
-                    message: "",
-                });
+
+        emailjs.sendForm('service_rb4l5cw', 'template_0bdyval', form.current, 'nKYHmb69A350_7kwn')
+            .then((result) => {
+                console.log(result.text);
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+                e.target.reset();
             });
     };
     return (
@@ -69,7 +39,7 @@ export function AboutHeader() {
                     </div>
                     <div className="contact-info">
                         <img src={icon2} />
-                        <p href="mailto:victoriaspainting@gmail.com" >victoriaspainting@gmail.com</p>
+                        <p href="mailto:business@victoriaspainting.com" >business@victoriaspainting.com</p>
                     </div>
                     <div className="contact-info">
                         <img src={icon3} />
@@ -83,25 +53,15 @@ export function AboutHeader() {
                         </div>
                     </div>
                 </div>
-                <form action="#" method="post" id="right-section" onSubmit={submitEmail}>
+                <form action="#" method="post" id="right-section" ref={form} onSubmit={sendEmail}>
                     <div id="name_phone">
-                        <input className="fields" type="text" id="about-name" onChange={handleStateChange}
-                            name="name"
-                            value={mailerState.name} placeholder="Name" required /><br />
+                        <input className="fields" type="text" id="about-name" name="from_name" placeholder="Name" required /><br />
                         <input className="fields" type="number" pattern="[0-9]{11}" id="phones" placeholder="Phone"
-                            onChange={handleStateChange}
-                            name="phone"
-                            value={mailerState.phones} placeholder="Phone Number" required /><br />
+                            name="from_phone" placeholder="Phone Number" required /><br />
                     </div>
-                    <input className="fields email-subject" type="email" id="about-email" onChange={handleStateChange}
-                        name="email"
-                        value={mailerState.email} placeholder="Email Address" required /><br />
-                    <input className="fields email-subject" type="text" id="select" onChange={handleStateChange}
-                        name="select"
-                        value={mailerState.select} placeholder="Subject" required /><br />
-                    <textarea className="fields" id="about-message" onChange={handleStateChange}
-                        name="message"
-                        value={mailerState.message} style={{ "height": "105px" }} placeholder="Your Message" defaultValue={""} required /><br />
+                    <input className="fields email-subject" type="email" id="about-email" name="from_email" placeholder="Email Address" required /><br />
+                    <input className="fields email-subject" type="text" id="select" name="select" placeholder="Subject" required /><br />
+                    <textarea className="fields" id="about-message" name="message" style={{ "height": "105px" }} placeholder="Your Message" defaultValue={""} required /><br />
                     <input type="submit" defaultValue="" className="fields" id="about-submit" />
                 </form>
             </section>

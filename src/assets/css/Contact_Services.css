@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 279px) {
     header {
         text-align: center;
     }
@@ -24,7 +24,7 @@
         padding: 12px;
     }
 
-    #about-list{
+    #about-list {
         padding: 0;
     }
 
@@ -32,14 +32,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 20px;
     }
 
     .about-article_cards-reverse {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 20px;
     }
 
     .services-description {
@@ -52,7 +50,58 @@
     }
 
     .contact_article_images {
+        width: 80%;
+        height: auto;
+        transition: all.3s ease-out;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width: 414px) {
+    header {
+        text-align: center;
+    }
+
+    article.center-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+    }
+
+    #list {
+        columns: 4;
+        padding: 12px;
+    }
+
+    #about-list {
+        padding: 0;
+    }
+
+    .about-article_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .about-article_cards-reverse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+    }
+
+    .contact_article_images {
+        width: 80%;
         height: auto;
         transition: all.3s ease-out;
     }
@@ -63,7 +112,7 @@
         text-align: center;
     }
 
-    article.center-text  {
+    article.center-text {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -107,7 +156,7 @@
         transition: all.3s ease-out;
 
     }
-    
+
     div.services {
         margin-top: 20px;
     }
@@ -118,7 +167,7 @@
         text-align: center;
     }
 
-    article.center-text  {
+    article.center-text {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -145,7 +194,7 @@
         width: 90%;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .services-description {
@@ -163,13 +212,12 @@
         height: auto;
         object-fit: cover;
         transition: all.3s ease-out;
-
     }
 
 }
 
 @media (min-width: 1440px) {
-     header {
+    header {
         text-align: center;
     }
 
@@ -200,7 +248,7 @@
         width: 90%;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .services-description {

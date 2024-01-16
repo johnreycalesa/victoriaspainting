@@ -1,6 +1,7 @@
 import React from "react";
 import '../../../assets/css/Contact_Services.css';
 import '../../../assets/css/fonts.css';
+import { useEffect } from 'react';
 import contactimg1 from "../../../assets/img/contactpage_img.png";
 import contactimg2 from "../../../assets/img/contactpage_img (2).png";
 import contactimg3 from "../../../assets/img/contactpage_img (3).png";
@@ -9,6 +10,9 @@ import contactimg5 from "../../../assets/img/contactpage_img (5).png";
 import contactimg6 from "../../../assets/img/contactpage_img (6).png";
 
 export function ContactServices() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <article className="center-text">
             <div className="services">

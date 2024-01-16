@@ -9,7 +9,47 @@ a {
     color: #003057;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 280px) {
+
+    h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p,
+    li,
+    button,
+    a,
+    input:placeholder-shown,
+    textarea:placeholder-shown,
+    ul li,
+    div,
+    select {
+        font-size: 10px;
+    }
+
+    a {
+        padding: 5px 10px;
+        color: #003057;
+        border-radius: 5px;
+    }
+
+    a.active {
+        background-color: #003057;
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width: 281px) and (max-width: 414px) {
 
     h1 {
         font-size: 24px;
@@ -26,8 +66,14 @@ a {
 
     p,
     li,
-    button {
-        font-size: 14px;
+    button,
+    a,
+    input:placeholder-shown,
+    textarea:placeholder-shown,
+    ul li,
+    div,
+    select {
+        font-size: 10px;
     }
 
     a {
@@ -60,7 +106,13 @@ a {
 
     p,
     li,
-    button {
+    button,
+    a,
+    input:placeholder-shown,
+    textarea:placeholder-shown,
+    ul li,
+    div,
+    select {
         font-size: 14px;
     }
 
@@ -93,7 +145,13 @@ a {
 
     p,
     li,
-    button {
+    button,
+    a,
+    input:placeholder-shown,
+    textarea:placeholder-shown,
+    ul li,
+    div,
+    select {
         font-size: 18px;
     }
 
@@ -127,7 +185,13 @@ a {
 
     p,
     li,
-    button {
+    button,
+    a,
+    input:placeholder-shown,
+    textarea:placeholder-shown,
+    ul li,
+    div,
+    select {
         font-size: 18px;
     }
 

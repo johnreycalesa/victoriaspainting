@@ -25,10 +25,11 @@ export function Footer() {
             inviting environment.
           </p>
           <div id="links">
-            <img src={facebook} className="socials" />
-            <img src={gmail} className="socials" />
-            <img src={linkedin} className="socials" />
-            <img src={instagram} className="socials" />
+            <a href="#"><img src={facebook} className="socials" /></a>
+            <a href="#"><img src={gmail} className="socials" /></a>
+            <a href="https://www.instagram.com/victoriaspaintingllc/" target="_blank">
+              <img src={instagram} className="socials" />
+            </a>
           </div>
         </div>
         <div id="center-column">
@@ -53,13 +54,13 @@ export function Footer() {
           </div>
           <div className="text-design">
             <img src={email} className="logo" />
-            <a href="mailto:victoriaspainting@gmail.com" className="contact-footer">
-              victoriaspainting@gmail.com
+            <a href="mailto: business@victoriaspainting.com" className="contact-footer">
+              business@victoriaspainting.com
             </a>
             <br />
           </div>
           <div className="text-design">
-            <img src={address} className="contact-footer" /> Dover, New Jersey
+            <img src={address} className="contact-footer logo" /> Dover, New Jersey
           </div>
         </div>
       </footer>

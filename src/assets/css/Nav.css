@@ -9,23 +9,28 @@ nav {
     background-color: white;
 }
 
-li.phone-number{
-    padding:  0 10px;
+li.phone-number {
+    padding: 0 10px;
     border-left: 1px solid black;
 }
 
-button.dropbtn{
+button.dropbtn {
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown {
+    float: right;
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
 }
 
 nav a {
     width: 100px;
 }
 
-
-@media only screen and (min-width: 320px) and (max-width: 590px) {
-
+@media only screen and (max-width: 279px) {
     nav ul {
         position: fixed;
         width: 100%;
@@ -41,15 +46,8 @@ nav a {
         color: black;
     }
 
-    li.phone-number{
+    li.phone-number {
         border-left: none
-    }
-
-    .dropdown {
-        float: right;
-        width: 30px;
-        cursor: pointer;
-        margin: 20px;
     }
 
     .navbar-menu {
@@ -63,6 +61,51 @@ nav a {
     .navbar-menu-hide {
         display: none;
         transition: all .5s;
+    }
+
+    button.dropbtn {
+        padding: 8px;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 590px) {
+    nav ul {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        background-color: white;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+        background-color: white;
+        color: black;
+    }
+
+    li.phone-number {
+        border-left: none
+    }
+
+    .navbar-menu {
+        display: block;
+        background-color: white;
+        margin: 0;
+        transition: all .5s;
+        width: 100%;
+    }
+
+    .navbar-menu-hide {
+        display: none;
+        transition: all .5s;
+    }
+
+    button.dropbtn {
+        padding: 8px;
+        width: 50%;
     }
 
 }
@@ -83,15 +126,8 @@ nav a {
         color: black;
     }
 
-    li.phone-number{
+    li.phone-number {
         border-left: none
-    }
-
-    .dropdown {
-        float: right;
-        width: 30px;
-        cursor: pointer;
-        margin: 20px;
     }
 
     .navbar-menu {
@@ -105,6 +141,11 @@ nav a {
     .navbar-menu-hide {
         display: none;
         transition: all .5s;
+    }
+
+    button.dropbtn {
+        padding: 8px;
+        width: 50%;
     }
 }
 
@@ -203,7 +244,6 @@ nav a {
     button.dropbtn {
         width: 100%;
         height: 100%;
-        margin-right: 25px;
     }
 
     button.dropbtn img {

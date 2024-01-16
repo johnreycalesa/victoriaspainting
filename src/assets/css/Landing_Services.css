@@ -10,12 +10,14 @@
     transition: all.3s ease-out;
 }
 
-button.article_buttons {
+a > button.article_buttons {
     background-color: #003057;
     color: white;
     border: none;
     padding: 7.5px;
     border-radius: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 .center-text-landing div h1,

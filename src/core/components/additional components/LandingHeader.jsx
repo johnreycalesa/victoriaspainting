@@ -24,18 +24,18 @@ export function LandingHeader() {
                         towards transforming your home.
                     </p>
                     <div className="text-overlay">
-                        <img  src={icon1} />
+                        <img src={icon1} />
                         <img src={icon2} />
-                        <img  src={icon3} />
-                        <img  src={icon4} />
+                        <img src={icon3} />
+                        <img src={icon4} />
                     </div>
                     <a href="tel:+19732344198" className="text-overlay">
-                        CALL US <br /> +1-302-555-0165
+                        CALL US <br /> +1-973-234-4198
                     </a>
                 </div>
             </div>
-            <div className="center-text">
-                <h1>Victoria Painting</h1>
+            <div className="center-text headers">
+                <h1>Victoria's Painting</h1>
                 <p>
                     <i>Color Consulting &amp; Painting Services</i>
                 </p>

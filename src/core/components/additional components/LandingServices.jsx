@@ -1,6 +1,9 @@
 import React from "react";
 import '../../../assets/css/Landing_Services.css';
 import '../../../assets/css/fonts.css';
+import { Routes, Route, NavLink, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import ContactPage from "../main components/ContactPage.jsx";
 import img1 from "../../../assets/img/services_img.png";
 import img2 from "../../../assets/img/services_img (2).png";
 import img3 from "../../../assets/img/services_img (3).png";
@@ -24,7 +27,8 @@ export function LandingServices() {
                         Contact us today to schedule a consultation and take the first step
                         towards transforming your home.
                     </p>
-                    <button className="article_buttons">EXPLORE</button>
+                    <Link to="/services" >
+                        <button className="article_buttons">EXPLORE</button></Link>
                 </div>
                 <div className="landing-article_cards">
                     <img className="article_images" src={img2} />
@@ -33,7 +37,7 @@ export function LandingServices() {
                         Contact us today to schedule a consultation and take the first step
                         towards transforming your home.
                     </p>
-                    <button className="article_buttons">EXPLORE</button>
+                    <Link to="/services" ><button className="article_buttons">EXPLORE</button></Link>
                 </div>
                 <div className="landing-article_cards">
                     <img className="article_images" src={img3} />
@@ -42,7 +46,7 @@ export function LandingServices() {
                         Contact us today to schedule a consultation and take the first step
                         towards transforming your home.
                     </p>
-                    <button className="article_buttons">EXPLORE</button>
+                    <Link to="/services" ><button className="article_buttons">EXPLORE</button></Link>
                 </div>
                 <div className="landing-article_cards">
                     <img className="article_images" src={img4} />
@@ -51,7 +55,7 @@ export function LandingServices() {
                         Contact us today to schedule a consultation and take the first step
                         towards transforming your home.
                     </p>
-                    <button className="article_buttons">EXPLORE</button>
+                    <Link to="/services" ><button className="article_buttons">EXPLORE</button></Link>
                 </div>
                 <div className="landing-article_cards">
                     <img className="article_images" src={img5} />
@@ -60,7 +64,7 @@ export function LandingServices() {
                         Contact us today to schedule a consultation and take the first step
                         towards transforming your home.
                     </p>
-                    <button className="article_buttons">EXPLORE</button>
+                    <Link to="/services" ><button className="article_buttons">EXPLORE</button></Link>
                 </div>
                 <div className="landing-article_cards">
                     <img className="article_images" src={img6} />
@@ -69,9 +73,11 @@ export function LandingServices() {
                         Contact us today to schedule a consultation and take the first step
                         towards transforming your home.
                     </p>
-                    <button className="article_buttons">EXPLORE</button>
+                    <Link to="/services" ><button className="article_buttons">EXPLORE</button></Link>
                 </div>
             </div>
+            <Routes>
+                <Route path="/services" element={<ContactPage />} /></Routes>
         </article>
     );
 }

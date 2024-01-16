@@ -30,39 +30,39 @@ const App = () => {
         />
         <div className="logo">
           <Link to="/" >
-          <img src={logo} alt="Logo" /></Link>
+            <img src={logo} alt="Logo" /></Link>
         </div>
-          <ul className="navbar-menu" id="navbar-id" >
-            <li>
-              <NavLink to="/services" style={{ textDecoration: "none" }}>
-                Our Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" style={{ textDecoration: "none" }}>
-                About Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" style={{ textDecoration: "none" }}>
-                Contact Us
-              </NavLink>
-            </li>
+        <ul className="navbar-menu" id="navbar-id" >
+          <li>
+            <NavLink to="/services" style={{ textDecoration: "none" }}>
+              Our Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" style={{ textDecoration: "none" }}>
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" style={{ textDecoration: "none" }}>
+              Contact Us
+            </NavLink>
+          </li>
 
-            <li href="tel:+19732344198" className="phone-number">+1 973-234-4198</li>
-            <li className="language-dropdown">
-              <button className="dropbtn">
-                <img src={eng} alt="english flag" /> EN
-              </button>
-            </li>
-          </ul>
-        
+          <li href="tel:+19732344198" className="phone-number">+1 973-234-4198</li>
+          <li className="language-dropdown">
+            <button className="dropbtn">
+              <img src={eng} alt="english flag" /> EN
+            </button>
+          </li>
+        </ul>
+
       </nav>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/services" element={<ContactPage />} />
         <Route path="/about" element={<ServicesPage />} />
-        <Route path="/contact" element={<AboutPage/>} />
+        <Route path="/contact" element={<AboutPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

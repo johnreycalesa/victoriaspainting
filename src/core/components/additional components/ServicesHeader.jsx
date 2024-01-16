@@ -10,7 +10,7 @@ export function ServicesHeader() {
     <div className="main-background">
       <div id="headers">
         <h1>About Us</h1>
-        <h1>WE ARE PROFESSIONALS IN THE FOLLOWING SERVICES</h1>
+        <h2>WE ARE PROFESSIONALS IN THE FOLLOWING SERVICES</h2>
       </div>
       <div id="services-headers">
         <div className="services-headers-content">

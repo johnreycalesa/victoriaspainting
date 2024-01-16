@@ -4,12 +4,11 @@ footer div h1 {
 
 }
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 279px) {
     footer {
         display: flex;
         flex-direction: column;
         background-color: #003057;
-        padding: 50px;
     }
 
     footer>* {
@@ -22,7 +21,7 @@ footer div h1 {
     footer div h1 {
         text-align: center;
         color: white;
-    
+
     }
 
     footer div p {
@@ -40,6 +39,7 @@ footer div h1 {
     #left-column,
     #right-column {
         width: 100%;
+        padding: 15px;
     }
 
 
@@ -51,6 +51,7 @@ footer div h1 {
         width: 100%;
         border-top: 1px solid #fffff7;
         border-bottom: 1px solid #fffff7;
+        padding: 15px;
     }
 
     .logo {
@@ -80,20 +81,118 @@ footer div h1 {
         color: white;
     }
 
-    .text-design{
+    .text-design {
         text-align: center;
     }
-    .text-design{
+
+    .text-design {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    img.socials{
+    img.socials {
         margin: 15px;
     }
 
-    a.contact-footer{
+    a.contact-footer {
+        color: white;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width: 590px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #003057;
+        padding: 20px;
+    }
+
+    footer>* {
+        color: white;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    footer div h1 {
+        text-align: center;
+        color: white;
+
+    }
+
+    footer div p {
+        text-align: left;
+        font-style: italic;
+        color: white;
+    }
+
+    footer #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #left-column,
+    #right-column {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+    #right-column div .contact {
+        text-transform: lowercase;
+    }
+
+    #center-column {
+        width: 100%;
+        border-top: 1px solid #fffff7;
+        border-bottom: 1px solid #fffff7;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    #credits {
+        text-align: center;
+        background-color: #003057;
+        color: white;
+        display: block;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #center-column ul {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 111%;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #center-column ul li {
+        text-align: center;
+        color: white;
+    }
+
+    .text-design {
+        text-align: center;
+    }
+
+    .text-design {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.socials {
+        margin: 15px;
+    }
+
+    a.contact-footer {
         color: white;
     }
 }
@@ -172,22 +271,25 @@ footer div h1 {
         color: white;
     }
 
-    .text-design, a.contact-footer{
-        white-space: pre-wrap; 
-        width: 150px; 
+    .text-design,
+    a.contact-footer {
+        white-space: pre-wrap;
+        width: 150px;
         overflow: hidden;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
     }
-    .text-design{
+
+    .text-design {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    img.socials{
+
+    img.socials {
         margin: 7.5px;
     }
 
-    a.contact-footer{
+    a.contact-footer {
         color: white;
     }
 }
@@ -266,28 +368,30 @@ footer div h1 {
         color: white;
     }
 
-    .text-design, a.contact-footer{
-        white-space: pre-wrap; 
-        width: 200px; 
+    .text-design,
+    a.contact-footer {
+        white-space: pre-wrap;
+        width: 200px;
         overflow: hidden;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
     }
 
-    .text-design{
+    .text-design {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    
-    img.socials{
+
+    img.socials {
         margin: 15px;
     }
 
-    a.contact-footer{
+    a.contact-footer {
         color: white;
     }
 }
+
 @media only screen and (min-width: 1080px) and (max-width: 1439px) {
     footer {
         display: flex;
@@ -362,25 +466,26 @@ footer div h1 {
         color: white;
     }
 
-    .text-design, a.contact-footer{
-        white-space: pre-wrap; 
-        width: 200px; 
+    .text-design,
+    a.contact-footer {
+        white-space: pre-wrap;
+        width: 200px;
         overflow: hidden;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
     }
 
-    .text-design{
+    .text-design {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    
-    img.socials{
+
+    img.socials {
         margin: 15px;
     }
 
-    a.contact-footer{
+    a.contact-footer {
         color: white;
     }
 }
@@ -392,7 +497,7 @@ footer div h1 {
         background-color: #003057;
         width: 1440px;
         padding: 10px;
-        
+
     }
 
     footer>* {
@@ -458,14 +563,14 @@ footer div h1 {
         padding: 0;
     }
 
-    .text-design{
+    .text-design {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    
-    img.socials{
+
+    img.socials {
         margin: 15px;
     }
 
@@ -473,7 +578,7 @@ footer div h1 {
         color: white;
     }
 
-    a.contact-footer{
+    a.contact-footer {
         color: white;
     }
 }
