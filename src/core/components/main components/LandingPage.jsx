@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import { LandingHeader } from "../additional components/LandingHeader";
 import { LandingServices } from "../additional components/LandingServices";
 import { LandingSlider } from "../additional components/LandingSlider";
@@ -11,7 +10,7 @@ function LandingPage() {
     <div>
       <LandingHeader />
       <LandingServices />
-      {/* <LandingSlider /> */}
+      <LandingSlider />
       <Contacts />
       <Footer />
     </div>
