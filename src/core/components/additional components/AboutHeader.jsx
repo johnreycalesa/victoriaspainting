@@ -33,19 +33,19 @@ export function AboutHeader() {
             <section id="about-section">
                 <div id="left-section">
                     <div className="contact-info">
-                        <img src={icon1} />
+                        <img src={icon1} alt="Phone icon"/>
                         <p href="tel:+19732344198">+1 973-234-4198</p>
                     </div>
                     <div className="contact-info">
-                        <img src={icon2} />
+                        <img src={icon2} alt="Email icon"/>
                         <p href="mailto:business@victoriaspainting.com" >business@victoriaspainting.com</p>
                     </div>
                     <div className="contact-info">
-                        <img src={icon3} />
+                        <img src={icon3} alt="Location icon"/>
                         <p>New Jersey</p>
                     </div>
                     <div className="contact-info hours">
-                        <img src={icon4} />
+                        <img src={icon4} alt="Time availability icon"/>
                         <div id="working-hours">
                             <h2>Working Hours</h2>
                             <p>Monday – Friday: 09:00 AM – 5:00 PM<br />Saturday – Sunday: Close</p>
@@ -59,7 +59,7 @@ export function AboutHeader() {
                             name="from_phone" placeholder="Phone Number" required /><br />
                     </div>
                     <input className="fields email-subject" type="email" id="about-email" name="from_email" placeholder="Email Address" required /><br />
-                    <input className="fields email-subject" type="text" id="select" name="select" placeholder="Subject" required /><br />
+                    <input className="fields email-subject" type="text" id="select" name="select" placeholder="Subject" alt="Appointment Subject matter"required /><br />
                     <textarea className="fields" id="about-message" name="message" style={{ "height": "105px" }} placeholder="Your Message" defaultValue={""} required /><br />
                     <input type="submit" defaultValue="" className="fields" id="about-submit" />
                 </form>
