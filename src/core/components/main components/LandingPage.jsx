@@ -10,7 +10,7 @@ function LandingPage() {
     <div>
       <LandingHeader />
       <LandingServices />
-      <LandingSlider />
+      {/* <LandingSlider /> */}
       <Contacts />
       <Footer />
     </div>

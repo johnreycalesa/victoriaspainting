@@ -34,17 +34,17 @@ const App = () => {
         </div>
         <ul className="navbar-menu" id="navbar-id" >
           <li>
-            <NavLink to="/services" style={{ textDecoration: "none" }}>
+            <NavLink to="/services" className="hover" style={{ textDecoration: "none" }}>
               Our Services
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" style={{ textDecoration: "none" }}>
+            <NavLink to="/about"  className="hover" style={{ textDecoration: "none" }}>
               About Us
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" style={{ textDecoration: "none" }}>
+            <NavLink to="/contact"  className="hover" style={{ textDecoration: "none" }}>
               Contact Us
             </NavLink>
           </li>

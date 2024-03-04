@@ -34,6 +34,11 @@ p.text-overlay {
     ;
 }
 
+img.history_image:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all.3s ease-out;
+}
+
 @media only screen and (max-width: 414px) {
     .center-text>* {
         text-align: center;
@@ -310,7 +315,6 @@ p.text-overlay {
         background-size: cover;
         background-position: center;
         object-fit: cover;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .text-overlay img {
@@ -415,7 +419,6 @@ p.text-overlay {
         background-size: cover;
         background-position: center;
         object-fit: cover;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .text-overlay img {
@@ -525,7 +528,6 @@ p.text-overlay {
         background-size: cover;
         background-position: center;
         object-fit: cover;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .text-overlay img {
@@ -636,7 +638,6 @@ p.text-overlay {
         background-size: cover;
         background-position: center;
         object-fit: cover;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .text-overlay img {

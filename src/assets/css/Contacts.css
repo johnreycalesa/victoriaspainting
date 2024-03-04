@@ -1,4 +1,4 @@
-#left-box {
+#left-box:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: all.3s ease-out;
 }
