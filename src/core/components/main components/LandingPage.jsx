@@ -1,7 +1,6 @@
 import React from "react";
 import { LandingHeader } from "../additional components/LandingHeader";
 import { LandingServices } from "../additional components/LandingServices";
-import { LandingSlider } from "../additional components/LandingSlider";
 import { Contacts } from "../common/Contacts/Contacts";
 import { Footer } from "../common/Footer/Footer";
 
@@ -10,7 +9,6 @@ function LandingPage() {
     <div>
       <LandingHeader />
       <LandingServices />
-      {/* <LandingSlider /> */}
       <Contacts />
       <Footer />
     </div>
