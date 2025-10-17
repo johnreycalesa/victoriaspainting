@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutHeader } from "../additional components/AboutHeader";
-import { AboutAreas } from "../additional components/AboutAreas";
+import { AboutArticle } from "../additional components/AboutArticle";
 import { Contacts } from "../common/Contacts/Contacts";
 import { Footer } from "../common/Footer/Footer";
 
@@ -8,7 +8,7 @@ export function AboutPage() {
   return (
     <div>
       <AboutHeader />
-      <AboutAreas />
+      <AboutArticle />
       <Contacts />
       <Footer />
     </div>
