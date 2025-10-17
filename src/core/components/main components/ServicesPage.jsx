@@ -1,6 +1,6 @@
 import React from "react";
 import { ServicesHeader } from "../additional components/ServicesHeader";
-import { ServicesArticle } from "../additional components/ServicesArticle";
+import { ServicesList } from "../additional components/ServicesList";
 import { Contacts } from "../common/Contacts/Contacts";
 import { Footer } from "../common/Footer/Footer";
 
@@ -8,7 +8,7 @@ export function ServicesPage() {
   return (
     <div>
       <ServicesHeader />
-      <ServicesArticle />
+      <ServicesList />
       <Contacts />
       <Footer />
     </div>
