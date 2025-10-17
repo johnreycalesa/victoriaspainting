@@ -1,135 +1,54 @@
 import React from "react";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import "../../../assets/css/fonts.css";
-import "../../../assets/css/About_Header.css";
-import icon1 from "../../../assets/img/icons/phone_contacts.png";
-import icon2 from "../../../assets/img/icons/email_contacts.png";
-import icon3 from "../../../assets/img/icons/address_contacts.png";
-import icon4 from "../../../assets/img/icons/shops_contacts.png";
+import aboutimg1 from "../../../assets/img/icons/icon1_about.png";
+import aboutimg3 from "../../../assets/img/icons/icon3_about.png";
+import aboutimg4 from "../../../assets/img/icons/icon4_about.png";
+
+const services = [
+  { id: 1, name: "Cabinet Painting", icon: aboutimg1 },
+  { id: 2, name: "Tile and Wood Floor Painting", icon: aboutimg1 },
+  { id: 3, name: "Counter-top Painting", icon: aboutimg3 },
+  { id: 4, name: "Closets and Pantries Painting", icon: aboutimg4 },
+];
 
 export function AboutHeader() {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_rb4l5cw",
-        "template_0bdyval",
-        form.current,
-        "nKYHmb69A350_7kwn"
-      )
-      .then(
-        (result) => {
-          // Email sent successfully
-          e.target.reset();
-        },
-        (error) => {
-          // Email sending failed
-          e.target.reset();
-        }
-      );
-  };
   return (
-    <div id="image-content">
-      <header>
-        <h1 id="about">Contact Us</h1>
-      </header>
-      <section id="about-section">
-        <div id="left-section">
-          <div className="contact-info">
-            <img src={icon1} alt="Phone icon" />
-            <p href="tel:+19732344198">+1 973-234-4198</p>
-          </div>
-          <div className="contact-info">
-            <img src={icon2} alt="Email icon" />
-            <p href="mailto:business@victoriaspainting.com">
-              business@victoriaspainting.com
-            </p>
-          </div>
-          <div className="contact-info">
-            <img src={icon3} alt="Location icon" />
-            <p>New Jersey</p>
-          </div>
-          <div className="contact-info hours">
-            <img src={icon4} alt="Time availability icon" />
-            <div id="working-hours">
-              <h2>Working Hours</h2>
-              <p>
-                Monday – Friday: 09:00 AM – 5:00 PM
-                <br />
-                Saturday – Sunday: Close
-              </p>
-            </div>
+    <div className="bg-gradient-to-br from-primary to-primary-light text-white">
+      {/* Header Section */}
+      <div className="section-container py-16 md:py-20 text-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          About Us
+        </h1>
+        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold uppercase tracking-wide text-white/90">
+          We Are Professionals In The Following Services
+        </h2>
+      </div>
+
+      {/* Services Grid */}
+      <div className="bg-white py-12 md:py-16">
+        <div className="section-container">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="group bg-white border-2 border-primary/20 hover:border-primary rounded-2xl p-6 md:p-8 text-center transition-all duration-300 transform hover:-translate-y-2 hover:shadow-brand-lg"
+              >
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-primary to-primary-light p-4 rounded-full transition-transform duration-300 group-hover:scale-110">
+                    <img
+                      src={service.icon}
+                      alt={`${service.name} icon`}
+                      className="w-12 h-12 md:w-16 md:h-16 object-contain brightness-0 invert"
+                    />
+                  </div>
+                </div>
+                <p className="text-base md:text-lg font-bold text-dark group-hover:text-primary transition-colors duration-300">
+                  {service.name}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
-        <form
-          action="#"
-          method="post"
-          id="right-section"
-          ref={form}
-          onSubmit={sendEmail}
-        >
-          <div id="name_phone">
-            <input
-              className="fields"
-              type="text"
-              id="about-name"
-              name="from_name"
-              placeholder="Name"
-              required
-            />
-            <br />
-            <input
-              className="fields"
-              type="number"
-              pattern="[0-9]{11}"
-              id="phones"
-              name="from_phone"
-              placeholder="Phone Number"
-              required
-            />
-            <br />
-          </div>
-          <input
-            className="fields email-subject"
-            type="email"
-            id="about-email"
-            name="from_email"
-            placeholder="Email Address"
-            required
-          />
-          <br />
-          <input
-            className="fields email-subject"
-            type="text"
-            id="select"
-            name="select"
-            placeholder="Subject"
-            alt="Appointment Subject matter"
-            required
-          />
-          <br />
-          <textarea
-            className="fields"
-            id="about-message"
-            name="message"
-            style={{ height: "105px" }}
-            placeholder="Your Message"
-            defaultValue={""}
-            required
-          />
-          <br />
-          <input
-            type="submit"
-            defaultValue=""
-            className="fields"
-            id="about-submit"
-          />
-        </form>
-      </section>
+      </div>
     </div>
   );
 }
