@@ -11,50 +11,56 @@ const services = [
   {
     id: 1,
     title: "Dry Wall Painting & Repair",
-    description: "Contact us today to schedule a consultation and take the first step towards transforming your home.",
+    description:
+      "Contact us today to schedule a consultation and take the first step towards transforming your home.",
     image: img1,
-    alt: "Man painting the wall"
+    alt: "Man painting the wall",
   },
   {
     id: 2,
     title: "Cabinet Painting",
-    description: "Contact us today to schedule a consultation and take the first step towards transforming your home.",
+    description:
+      "Contact us today to schedule a consultation and take the first step towards transforming your home.",
     image: img2,
-    alt: "Old man painting the cabinet"
+    alt: "Old man painting the cabinet",
   },
   {
     id: 3,
     title: "Power Wash",
-    description: "Contact us today to schedule a consultation and take the first step towards transforming your home.",
+    description:
+      "Contact us today to schedule a consultation and take the first step towards transforming your home.",
     image: img3,
-    alt: "Man is cleaning the wall"
+    alt: "Man is cleaning the wall",
   },
   {
     id: 4,
     title: "Wallpaper Removal",
-    description: "Contact us today to schedule a consultation and take the first step towards transforming your home.",
+    description:
+      "Contact us today to schedule a consultation and take the first step towards transforming your home.",
     image: img4,
-    alt: "Man is fixing and covering holes in the wall"
+    alt: "Man is fixing and covering holes in the wall",
   },
   {
     id: 5,
     title: "Exterior & Interior Painting",
-    description: "Contact us today to schedule a consultation and take the first step towards transforming your home.",
+    description:
+      "Contact us today to schedule a consultation and take the first step towards transforming your home.",
     image: img5,
-    alt: "Two man are painting the exterior part of the house"
+    alt: "Two man are painting the exterior part of the house",
   },
   {
     id: 6,
     title: "Deck Sealing & Deck Staining",
-    description: "Contact us today to schedule a consultation and take the first step towards transforming your home.",
+    description:
+      "Contact us today to schedule a consultation and take the first step towards transforming your home.",
     image: img6,
-    alt: "Old man is cleaning the wooden floor"
-  }
+    alt: "Old man is cleaning the wooden floor",
+  },
 ];
 
 export function LandingServices() {
   return (
-    <section className="section-container bg-white">
+    <section className="section-container bg-gray-50">
       {/* Header */}
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-4">
