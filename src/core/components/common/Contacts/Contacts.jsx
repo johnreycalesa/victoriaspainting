@@ -9,7 +9,7 @@ export function Contacts() {
 
     emailjs
       .sendForm(
-        "service_rb4l5cw",
+        "service_wctmbgh",
         "template_0bdyval",
         form.current,
         "nKYHmb69A350_7kwn"
@@ -29,7 +29,10 @@ export function Contacts() {
   };
 
   return (
-    <section className="section-container bg-white">
+    <section
+      id="contact"
+      className="section-container bg-gray-50 border-t border-gray-200 pt-12 md:pt-16 pb-16 md:pb-20"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Contact Form */}
         <div className="bg-white rounded-2xl shadow-brand-lg border border-gray-200 p-8 md:p-10">
@@ -37,15 +40,18 @@ export function Contacts() {
             Get a Free Estimate
           </h2>
           <p className="text-gray-600 text-lg mb-8">
-            We're eager to hear about your painting vision! Let us know and we'll
-            be in touch ASAP.
+            We're eager to hear about your painting vision! Let us know and
+            we'll be in touch ASAP.
           </p>
 
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             {/* Name and Email Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Name *
                 </label>
                 <input
@@ -58,7 +64,10 @@ export function Contacts() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Email *
                 </label>
                 <input
@@ -75,22 +84,28 @@ export function Contacts() {
             {/* Phone and Service Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Phone Number *
                 </label>
                 <input
                   type="tel"
-                  pattern="\d{3}-\d{3}-\d{4}"
+                  pattern="\d{10}"
                   id="phone"
                   name="from_phone"
-                  placeholder="123-456-7890"
-                  maxLength="12"
+                  placeholder="1234567890"
+                  maxLength="10"
                   required
                   className="w-full px-4 py-3 border-2 border-primary rounded-lg focus:ring-2 focus:ring-primary-light focus:border-primary-light transition-all duration-300"
                 />
               </div>
               <div>
-                <label htmlFor="select" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="select"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Service Needed *
                 </label>
                 <select
@@ -121,7 +136,10 @@ export function Contacts() {
 
             {/* Message */}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
                 Message *
               </label>
               <textarea
@@ -135,10 +153,7 @@ export function Contacts() {
             </div>
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full btn-secondary"
-            >
+            <button type="submit" className="w-full btn-secondary">
               Send Message
             </button>
           </form>
@@ -174,9 +189,7 @@ export function Contacts() {
               </svg>
               <div>
                 <p className="text-sm text-white/80">Phone</p>
-                <p className="text-lg font-semibold">
-                  +1 973-234-4198
-                </p>
+                <p className="text-lg font-semibold">+1 973-234-4198</p>
               </div>
             </a>
 
@@ -237,8 +250,8 @@ export function Contacts() {
           {/* Additional Info */}
           <div className="mt-8 pt-8 border-t border-white/20">
             <p className="text-white/90 leading-relaxed">
-              Our team is ready to transform your space. Get in touch today for a
-              free consultation and estimate.
+              Our team is ready to transform your space. Get in touch today for
+              a free consultation and estimate.
             </p>
           </div>
         </div>
