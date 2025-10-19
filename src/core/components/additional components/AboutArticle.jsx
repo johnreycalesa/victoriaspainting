@@ -6,24 +6,26 @@ const features = [
   {
     id: 1,
     title: "Qualified Expert",
-    description: "Our team has over 45 years of combined experience in the industry of painting and remodeling kitchen cabinets business.",
+    description:
+      "Our team has over 45 years of combined experience in the industry of painting and remodeling kitchen cabinets business.",
     image: servicesimg2,
     imageAlt: "Professional painting expert at work",
-    reverse: false
+    reverse: false,
   },
   {
     id: 2,
     title: "Flexible Schedule",
-    description: "We are here to serve our customers' needs and want to ensure we agree upon a time and dates that work for all parties.",
+    description:
+      "We are here to serve our customers' needs and want to ensure we agree upon a time and dates that work for all parties.",
     image: servicesimg1,
     imageAlt: "Flexible painting schedule service",
-    reverse: true
-  }
+    reverse: true,
+  },
 ];
 
 export function AboutArticle() {
   return (
-    <section className="section-container bg-white">
+    <section className="section-container bg-gray-50">
       {/* Header */}
       <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-6">
@@ -59,12 +61,11 @@ export function AboutArticle() {
             </div>
 
             {/* Content */}
-            <div className={`${feature.reverse ? "lg:order-1" : "lg:order-2"} space-y-6`}>
-              <div className="inline-block">
-                <div className="bg-gradient-to-r from-primary to-primary-light text-white px-4 py-2 rounded-lg text-sm font-semibold uppercase tracking-wide mb-4">
-                  Feature #{feature.id}
-                </div>
-              </div>
+            <div
+              className={`${
+                feature.reverse ? "lg:order-1" : "lg:order-2"
+              } space-y-6`}
+            >
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark">
                 {feature.title}
               </h3>
@@ -102,15 +103,21 @@ export function AboutArticle() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
           <div className="space-y-2">
             <div className="text-4xl md:text-5xl font-bold">45+</div>
-            <div className="text-base md:text-lg text-white/90">Years Experience</div>
+            <div className="text-base md:text-lg text-white/90">
+              Years Experience
+            </div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl md:text-5xl font-bold">100%</div>
-            <div className="text-base md:text-lg text-white/90">Quality Assured</div>
+            <div className="text-base md:text-lg text-white/90">
+              Quality Assured
+            </div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl md:text-5xl font-bold">24/7</div>
-            <div className="text-base md:text-lg text-white/90">Customer Support</div>
+            <div className="text-base md:text-lg text-white/90">
+              Customer Support
+            </div>
           </div>
         </div>
       </div>
