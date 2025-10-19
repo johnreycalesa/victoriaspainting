@@ -15,29 +15,37 @@ export function Footer() {
             </h2>
             <p className="text-white/80 leading-relaxed text-sm md:text-base">
               At Victoria's Painting, we take pride in delivering high quality
-              painting services that exceed our customers' expectations. Our team
-              of skilled professionals is committed to providing exceptional
-              craftsmanship and excellent customer service, ensuring that every
-              project is completed with the utmost care and attention to detail.
-              You can trust us to transform your space into a beautiful and
-              inviting environment.
+              painting services that exceed our customers' expectations. Our
+              team of skilled professionals is committed to providing
+              exceptional craftsmanship and excellent customer service, ensuring
+              that every project is completed with the utmost care and attention
+              to detail. You can trust us to transform your space into a
+              beautiful and inviting environment.
             </p>
             <div className="flex items-center space-x-4 pt-2">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
+                className="bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 transform hover:scale-110 p-3"
                 aria-label="Facebook"
               >
-                <img src={facebook} className="w-6 h-6" alt="Facebook logo" />
+                <ion-icon
+                  name="logo-facebook"
+                  size="large"
+                  alt="Facebook logo"
+                ></ion-icon>
               </a>
               <a
                 href="mailto:business@victoriaspainting.com"
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
                 aria-label="Email"
               >
-                <img src={gmail} className="w-6 h-6" alt="Gmail logo" />
+                <ion-icon
+                  name="logo-google"
+                  size="large"
+                  alt="Gmail logo"
+                ></ion-icon>
               </a>
               <a
                 href="https://www.instagram.com/victoriaspaintingllc/"
@@ -46,7 +54,11 @@ export function Footer() {
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
                 aria-label="Instagram"
               >
-                <img src={instagram} className="w-6 h-6" alt="Instagram logo" />
+                <ion-icon
+                  name="logo-instagram"
+                  size="large"
+                  alt="Instagram logo"
+                ></ion-icon>
               </a>
             </div>
           </div>
