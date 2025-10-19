@@ -1,10 +1,10 @@
 import React from "react";
-import aboutimg from "../../../assets/img/about_areas.webp";
-import listimg from "../../../assets/img/list-area.webp";
+import { ServiceAreaMap } from "./ServiceAreaMap";
+import { ServiceAreasList } from "./ServiceAreasList";
 
 export function ContactAreas() {
   return (
-    <section className="section-container bg-gradient-to-br from-gray-50 to-white">
+    <section className="section-container bg-gray-50">
       {/* Header */}
       <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
         <div className="inline-block mb-4">
@@ -24,35 +24,11 @@ export function ContactAreas() {
 
       {/* Images Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-        {/* Map Image */}
-        <div className="group relative overflow-hidden rounded-2xl shadow-brand-lg hover:shadow-2xl transition-all duration-500">
-          <img
-            src={aboutimg}
-            alt="Areas covered for the services in a map"
-            className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <h3 className="text-white font-bold text-xl">Service Area Map</h3>
-            <p className="text-white/90 text-sm mt-1">Coverage across New Jersey</p>
-          </div>
-        </div>
+        {/* Interactive Map */}
+        <ServiceAreaMap />
 
-        {/* List Image */}
-        <div className="group relative overflow-hidden rounded-2xl shadow-brand-lg hover:shadow-2xl transition-all duration-500">
-          <img
-            src={listimg}
-            alt="Areas covered for the services"
-            className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <h3 className="text-white font-bold text-xl">Coverage Details</h3>
-            <p className="text-white/90 text-sm mt-1">Complete list of service areas</p>
-          </div>
-        </div>
+        {/* Service Areas List */}
+        <ServiceAreasList />
       </div>
 
       {/* Call to Action */}
