@@ -22,43 +22,40 @@ export function Footer() {
               to detail. You can trust us to transform your space into a
               beautiful and inviting environment.
             </p>
-            <div className="flex items-center space-x-4 pt-2">
+            <div className="flex items-center space-x-3 md:space-x-4 pt-2">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 transform hover:scale-110 p-3"
+                className="bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 transform hover:scale-110 p-2 md:p-3"
                 aria-label="Facebook"
               >
-                <ion-icon
-                  name="logo-facebook"
-                  size="large"
+                <i
+                  className="fa-brands fa-facebook text-3xl md:text-4xl lg:text-5xl"
                   alt="Facebook logo"
-                ></ion-icon>
+                ></i>
               </a>
               <a
                 href="mailto:business@victoriaspainting.com"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
+                className="bg-white/10 hover:bg-white/20 p-2 md:p-3 rounded-full transition-all duration-300 transform hover:scale-110"
                 aria-label="Email"
               >
-                <ion-icon
-                  name="logo-google"
-                  size="large"
+                <i
+                  className="fa-brands fa-google text-2xl md:text-3xl lg:text-4xl"
                   alt="Gmail logo"
-                ></ion-icon>
+                ></i>
               </a>
               <a
                 href="https://www.instagram.com/victoriaspaintingllc/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
+                className="bg-white/10 hover:bg-white/20 p-2 md:p-3 rounded-full transition-all duration-300 transform hover:scale-110"
                 aria-label="Instagram"
               >
-                <ion-icon
-                  name="logo-instagram"
-                  size="large"
+                <i
+                  className="fa-brands fa-instagram text-3xl md:text-4xl lg:text-5xl"
                   alt="Instagram logo"
-                ></ion-icon>
+                ></i>
               </a>
             </div>
           </div>
