@@ -47,14 +47,13 @@ const mapOptions = {
 
 export function ServiceAreaMap() {
   const [selectedMarker, setSelectedMarker] = useState(null);
-  const [map, setMap] = useState(null);
 
-  const onLoad = useCallback((map) => {
-    setMap(map);
+  const onLoad = useCallback(() => {
+    // Map loaded
   }, []);
 
   const onUnmount = useCallback(() => {
-    setMap(null);
+    // Map unmounted
   }, []);
 
   // Get API key from environment variable

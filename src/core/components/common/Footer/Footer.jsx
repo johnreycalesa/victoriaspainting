@@ -1,7 +1,4 @@
 import React from "react";
-import facebook from "../../../../assets/img//icons/facebook.png";
-import gmail from "../../../../assets/img//icons/gmail.png";
-import instagram from "../../../../assets/img//icons/instagram.png";
 
 export function Footer() {
   return (

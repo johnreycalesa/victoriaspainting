@@ -1,8 +1,4 @@
 import React from "react";
-import icon1 from "../../../assets/img/icons/icon1_landing.png";
-import icon2 from "../../../assets/img/icons/icon2_landing.png";
-import icon3 from "../../../assets/img/icons/icon3_landing.png";
-import icon4 from "../../../assets/img/icons/icon4_landing.png";
 
 const stats = [
   {
