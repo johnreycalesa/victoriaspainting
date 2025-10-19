@@ -63,7 +63,7 @@ export function ServicesList() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-16 md:py-20 lg:py-24">
+    <section className="bg-gradient-to-b from-white to-gray-50 pt-16 pb-8 md:pt-20 md:pb-12 lg:pt-24 lg:pb-16">
       <div className="section-container">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
