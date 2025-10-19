@@ -40,8 +40,8 @@ export function LandingHeader() {
             </h1>
             <p className="text-lg md:text-xl mb-4 text-white/90 leading-relaxed max-w-3xl mx-auto">
               Develop your home into a space that reflects your unique style and
-              personality with our expert home makeover services. Victoria's
-              Painting offers a wide range of interior design from painting to
+              personality with our expert home makeover services. <strong className="font-bold text-white">Victoria's
+              Painting</strong> offers a wide range of interior design from painting to
               overall home makeover.
             </p>
             <p className="text-base md:text-lg mb-8 text-white/80">
@@ -50,34 +50,30 @@ export function LandingHeader() {
             </p>
 
             {/* Service Icons */}
-            <div className="flex justify-center items-center gap-6 md:gap-10 mb-10 flex-wrap">
-              <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
-                <img
-                  src={icon1}
-                  alt="Cabinet icon"
-                  className="w-12 h-12 md:w-16 md:h-16"
-                />
+            <div className="flex justify-center items-center gap-4 md:gap-6 lg:gap-10 mb-10 flex-wrap">
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 md:p-3 lg:p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+                <i
+                  className="fa-solid fa-house text-3xl md:text-5xl lg:text-6xl p-2 md:p-3 lg:p-4"
+                  alt="House icon"
+                ></i>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
-                <img
-                  src={icon2}
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 md:p-3 lg:p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+                <i
+                  className="fa-solid fa-door-open text-3xl md:text-5xl lg:text-6xl p-2 md:p-3 lg:p-4"
                   alt="Door icon"
-                  className="w-12 h-12 md:w-16 md:h-16"
-                />
+                ></i>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
-                <img
-                  src={icon3}
-                  alt="Faucet icon"
-                  className="w-12 h-12 md:w-16 md:h-16"
-                />
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 md:p-3 lg:p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+                <i
+                  className="fa-solid fa-shower text-3xl md:text-5xl lg:text-6xl p-2 md:p-3 lg:p-4"
+                  alt="Shower icon"
+                ></i>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
-                <img
-                  src={icon4}
-                  alt="Paintroll icon"
-                  className="w-12 h-12 md:w-16 md:h-16"
-                />
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-2 md:p-3 lg:p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
+                <i
+                  className="fa-solid fa-paint-roller text-3xl md:text-5xl lg:text-6xl p-2 md:p-3 lg:p-4"
+                  alt="Paint Roller icon"
+                ></i>
               </div>
             </div>
 
@@ -159,8 +155,8 @@ export function LandingHeader() {
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               Is your home in need of a face-lift? Are you ready for a change?
               Don't stress over the color selection process for your home.
-              Whether you want the interior or exterior painted, Victoria's
-              Painting is there to help. Not only can you get time with a
+              Whether you want the interior or exterior painted, <strong className="font-bold text-primary">Victoria's
+              Painting</strong> is there to help. Not only can you get time with a
               professional color consultant, so you'll know exactly which colors
               to pick.
             </p>
